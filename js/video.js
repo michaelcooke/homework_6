@@ -17,3 +17,8 @@ document.querySelector('#play').addEventListener('click', function () {
 document.querySelector('#pause').addEventListener('click', function () {
   video.pause()
 })
+
+document.querySelector('#volumeSlider').addEventListener('change', function () {
+  video.volume = this.value / 100
+  updateVolumeSpan()
+})
