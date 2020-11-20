@@ -10,4 +10,6 @@ document.querySelector('#play').addEventListener('click', function () {
   volumeSpan.innerHTML = video.volume * 100 + '%'
 })
 
-document.querySelector('#pause').addEventListener('click', function () {})
+document.querySelector('#pause').addEventListener('click', function () {
+  video.pause()
+})
