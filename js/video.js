@@ -52,3 +52,11 @@ document.querySelector('#volumeSlider').addEventListener('change', function () {
   video.volume = this.value / 100
   updateVolumeSpan()
 })
+
+document.querySelector('#old').addEventListener('click', function () {
+  video.setAttribute('class', 'oldTime')
+})
+
+document.querySelector('#original').addEventListener('click', function () {
+  video.removeAttribute('class', 'oldTime')
+})
