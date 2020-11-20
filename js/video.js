@@ -42,3 +42,13 @@ document.querySelector('#skip').addEventListener('click', function () {
   video.play()
   console.log(video.currentTime)
 })
+
+document.querySelector('#mute').addEventListener('click', function () {
+  video.muted = !video.muted
+  const muteButton = document.getElementById('mute')
+  if (video.muted) {
+    muteButton.innerHTML = 'Unmute'
+  } else {
+    muteButton.innerHTML = 'Mute'
+  }
+})
