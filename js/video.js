@@ -27,3 +27,8 @@ document.querySelector('#faster').addEventListener('click', function () {
   video.playbackRate *= 1.1
   console.log(video.playbackRate)
 })
+
+document.querySelector('#slower').addEventListener('click', function () {
+  video.playbackRate *= 0.9
+  console.log(video.playbackRate)
+})
