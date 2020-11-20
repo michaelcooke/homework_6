@@ -22,3 +22,8 @@ document.querySelector('#volumeSlider').addEventListener('change', function () {
   video.volume = this.value / 100
   updateVolumeSpan()
 })
+
+document.querySelector('#faster').addEventListener('click', function () {
+  video.playbackRate *= 1.1
+  console.log(video.playbackRate)
+})
