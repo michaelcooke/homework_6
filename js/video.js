@@ -5,6 +5,10 @@ function updateVolumeSpan () {
   volumeSpan.innerHTML = video.volume * 100 + '%'
 }
 
+function logVideoPlaybackRate () {
+  console.log(video.playbackRate)
+}
+
 window.addEventListener('load', function () {
   video = document.querySelector('#myVideo')
 })
@@ -25,10 +29,10 @@ document.querySelector('#volumeSlider').addEventListener('change', function () {
 
 document.querySelector('#faster').addEventListener('click', function () {
   video.playbackRate *= 1.1
-  console.log(video.playbackRate)
+  logVideoPlaybackRate()
 })
 
 document.querySelector('#slower').addEventListener('click', function () {
   video.playbackRate *= 0.9
-  console.log(video.playbackRate)
+  logVideoPlaybackRate()
 })
