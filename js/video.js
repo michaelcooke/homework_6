@@ -36,3 +36,9 @@ document.querySelector('#slower').addEventListener('click', function () {
   video.playbackRate *= 0.9
   logVideoPlaybackRate()
 })
+
+document.querySelector('#skip').addEventListener('click', function () {
+  video.currentTime += 5
+  video.play()
+  console.log(video.currentTime)
+})
